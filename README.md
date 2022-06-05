@@ -1,2 +1,2 @@
 # Rules
-For Surge now 
+For Surge and Clash now 
