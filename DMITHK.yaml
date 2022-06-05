@@ -127,7 +127,7 @@ proxies:
   # Shadowsocks(Websocket + TLS)
   - name: "DMITHK"
     type: ss
-    server: 2403:18c0:3:925::
+    server: setue.live 
     port: 9288
     cipher: chacha20-ietf-poly1305
     password: "eKtjXHtdMCdO5udrqBW+dA=="
