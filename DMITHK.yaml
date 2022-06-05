@@ -341,13 +341,21 @@ rule-providers:
     path: ./RuleSet/China.yaml
     url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/China.yaml
     interval: 86400
-
+  
+  Xbox:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Xbox.yaml
+    url: https://raw.githubusercontent.com/orisson003/Rules/main/Xbox.list
+    interval: 86400
+  
   ChinaIP:
     type: http
     behavior: ipcidr
     path: ./RuleSet/Extra/ChinaIP.yaml
     url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/ChinaIP.yaml
     interval: 86400
+  
 
 # 规则
 rules:
@@ -367,6 +375,9 @@ rules:
 
   # China Area Network
   - RULE-SET,China,DIRECT
+  
+  #Xbox
+  - RULE-SET,Xbox,DIRECT
 
   # Local Area Network
   - IP-CIDR,192.168.0.0/16,DIRECT
